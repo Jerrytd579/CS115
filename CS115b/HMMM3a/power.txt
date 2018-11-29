@@ -1,0 +1,11 @@
+# power.txt
+# Computes x ** y!
+0	read r1		# Get x
+1	read r2		# Get y
+2	setn r3	1	# Initializes r3 to 1
+3	jeqzn r2 7	# Done if R2 is 0?
+4	mul r3 r3 r1	# r3 = r3 * r1
+5	addn r2 -1	# r2 = r2 - 1
+6	jumpn 3		# Repeat
+7	write r3	# Print output
+8	halt

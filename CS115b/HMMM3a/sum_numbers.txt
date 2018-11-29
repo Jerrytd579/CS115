@@ -1,0 +1,13 @@
+# Sum_numbers
+# Adds up the sum of the numbers
+0	read r1		# Gets n
+1	setn r2 0	# i = 0
+2	setn r3 0	# sum = 0
+3	jeqzn r1 9	# Checks if n == 0
+4	addn r2 1	# Adds 1 to r2
+5	write r2	# Writes r2
+6	add r3 r3 r2	# r3 = r3 + r2
+7	addn r1 -1	# r1 = r1 - 1
+8	jumpn 3
+9	write r3
+10	halt

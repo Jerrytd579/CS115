@@ -1,0 +1,10 @@
+# factorial.txt
+# Computes n!
+0	read r1		# Get n (assume n>= 0)
+1	setn r13 1	# Initialize r13
+2	jeqzn r1 6	# Jump to end if r1 == 0
+3	mul r13 r13 r1	# r13 = r13 * r1
+4	addn r1 -1	# r1 gets r1 - 1
+5	jumpn 2		# Repeat
+6	write r13	# Print output
+7	halt
